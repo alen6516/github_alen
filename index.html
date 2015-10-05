@@ -1,27 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		*
+		{
+			padding:0;
+			margin:0;
+			-webkit-box-sizing: border-box;
+     		-moz-box-sizing: border-box;
+          	box-sizing: border-box;
+		}
+
+		body
+		{
+			width:100%;
+			font-size:100%;
+			color:#ffbb66;
+			background-color: #444444;
+			
+		}
+
+		header
+		{
+			width:1000px;
+			height:250px;
+			
+			/*display:inline-block;*/
+			border:1px solid #dddddd;
+			border-radius: 2px;
+			margin:5% auto;
+		}
+
+		.header_left
+		{
+			float:left;
+			width:40%;
+			height:100%;
+		}
+
+		.header_left > img
+		{
+			width:100%;
+			height:100%;
+		}
+
+		.header_right
+		{
+			float:left;
+			width:59%;
+			height:100%;
+		}
+
+		.content
+		{
+			width:1000px;
+			height:700px;
+			
+			border:1px solid #dddddd;
+			border-radius: 2px;
+			margin:5% auto;
+		}
+		
+	</style>
 </head>
-
-<style>
-	body
-	{
-	  width:100%;
-	  font-size:100%;
-	}
-	header
-	{
-	
-	}
-</style>
-
 <body>
-
 	<header>
+		<div class="header_left">
+			<img src="10406590_945456018808319_2537750272669931834_n.jpg">
+		</div>
+		<div class="header_right">
+			<div>劉皓平</div>
+			<div>電機105乙班</div>
+		</div>
 	</header>
-	<content></content>
-	<footer>
-
-	  </footer>
+	<div class="content">
+		<div class="cont_left"></div>
+		<div class="cont_right"></div>
+	</div>
+	<footer></footer>
+	
 </body>
 </html>
