@@ -92,9 +92,14 @@
 	<footer></footer>
 	<script>
 		$(document).ready(function(){
-			$('.content')hover(
+			$('.content > div').mouseover(
 				function(){
 					$(this).css('color','red');
+				});	
+
+			$('.content > div').mouseleave(
+				function(){
+					$(this).css('color','orange');
 				});	
 		});
 	</script>
