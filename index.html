@@ -91,7 +91,12 @@
 	</div>
 	<footer></footer>
 	<script>
-		$('.content').css('color','red');
+		$(document).ready(function(){
+			$('.content')hover(
+				function(){
+					$(this).css('color','red');
+				});	
+		});
 	</script>
 </body>
 </html>
