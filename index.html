@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<style>
 		*
 		{
@@ -89,6 +90,18 @@
 		 <div>因為我想不到要講什麼了，所以這裡的內容基本上跟上面一樣</div>
 	</div>
 	<footer></footer>
-	
+	<script>
+		$(document).ready(function(){
+			$('.content > div').mouseover(
+				function(){
+					$(this).css('color','red');
+				});	
+
+			$('.content > div').mouseleave(
+				function(){
+					$(this).css('color','orange');
+				});	
+		});
+	</script>
 </body>
 </html>
