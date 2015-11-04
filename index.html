@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<style>
 		*
 		{
@@ -53,6 +54,12 @@
 			height:100%;
 		}
 
+		.header_right > div,
+		.content > div
+		{
+			margin:5% 10%;
+		}
+
 		.content
 		{
 			width:1000px;
@@ -72,15 +79,26 @@
 		</div>
 		<div class="header_right">
 			<div>劉皓平</div>
-			<div>電機105乙班</div>
-			<div>興趣：踢球、打game</div>
 		</div>
 	</header>
 	<div class="content">
-		<div class="cont_left"></div>
-		<div class="cont_right"></div>
+	 	 <div>大家好，打ga厚，胎軋厚</div>
+		 <div>我是劉皓平，My name is Hao ping Liou</div>
+		 <div>我是105電機系乙班，我喜歡踢足球</div>
+		 <div>因為我想不到要講什麼了，所以這裡的內容基本上跟上面一樣</div>
 	</div>
-	<footer></footer>
-	
+	<script>
+		$(document).ready(function(){
+			$('.content > div').mouseover(
+				function(){
+					$(this).css('color','red');
+				});	
+
+			$('.content > div').mouseleave(
+				function(){
+					$(this).css('color','orange');
+				});	
+		});
+	</script>
 </body>
 </html>
